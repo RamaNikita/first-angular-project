@@ -1,0 +1,14 @@
+<div>
+    <button (click)="onSelectUser()">
+        <!-- <img [src]="'assets/users/'+ selectedUser.avatar" [alt]="selectedUser.name"/> -->
+        <img [src] = "imagePath()" [alt]="selectedUser().name"/>
+        
+        <!-- "Property Binding" - a key Angular feature that allows you to bind element properties to dynamic values.
+
+        For example, <img [src]="someSrc"> binds the src property of the underlying HTMLImageElement DOM object to the value stored in someSrc. -->
+        
+        <span>{{selectedUser().name}}</span>  <!-- {{}} is called interpolation -->
+    </button>
+</div>
+
+
